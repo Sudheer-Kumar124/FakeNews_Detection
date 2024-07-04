@@ -49,22 +49,53 @@ As future work, we can explore following:
 2) Experiment with deep learning techniques like LSTM, GRU, and different fusion methods (late fusion).
 
 ## Usage
+## Usage
+
 To use the project, follow these steps:
 
-Clone the repository:
-[git clone https://github.com/your-username/fake-news-detection.git]
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/fake-news-detection.git
+    ```
+2. **Install the required dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3. **Preprocess the data:**
+    ```bash
+    python preprocess.py
+    ```
+4. **Train and evaluate the models:**
+    ```bash
+    python train.py
+    python evaluate.py
+    ```
+5. **(Optional) Deploy the trained model for real-world use:**
+    ```markdown
+    # Example deployment script (deploy.py)
+    import pickle
+    from flask import Flask, request, jsonify
 
-Install the required dependencies:
-[pip install -r requirements.txt]
+    # Load the trained model
+    with open('model.pkl', 'rb') as file:
+        model = pickle.load(file)
 
-Preprocess the data:
-python preprocess.py
+    # Initialize the Flask app
+    app = Flask(__name__)
 
-Train and evaluate the models:
-python train.py
-python evaluate.py
+    @app.route('/predict', methods=['POST'])
+    def predict():
+        data = request.get_json(force=True)
+        prediction = model.predict([data['text']])
+        return jsonify({'prediction': prediction[0]})
 
-(Optional) Deploy the trained model for real-world use.
+    if __name__ == '__main__':
+        app.run(debug=True)
+
+    # Run the deployment script
+    python deploy.py
+    ```
+
    
 References:
 1)	[https://iopscience.iop.org/article/10.1088/1757-899X/1099/1/012040]
