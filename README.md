@@ -46,6 +46,7 @@ The key findings from the results are:
 2. Among the unimodal models, the BERT model achieves the best performance, with an accuracy of 78% and micro F1 of 74%.
 3. The BiLSTM model with dynamic GloVe vectors is the third-best unimodal approach.
 4. The traditional SVM baseline performs the poorest among the models compared.
+![Fake News Detection](C:\Users\meanu\Pictures\Screenshots\Screenshot 2024-07-04 231831.png)
 
 ## Future Work
 As future work, we can explore the following:
