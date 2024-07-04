@@ -8,10 +8,14 @@ The project uses the Fakeddit dataset, a large-scale and multi-modal dataset (te
 ### Data Preprocessing
 The data preprocessing steps include:
 
-### 1) Sentiment Analysis: Analyzing the sentiment polarity of the news titles using the TextBlob library, which provides a sentiment score ranging from -1 (negative) to 1 (positive).
-### 2) Text Cleaning: Removing noise and irrelevant characters from the text, such as punctuation, numbers, and multiple spaces.
-### 3) Stop-words Removal and Lemmatization: Removing common stop-words and applying lemmatization to reduce words to their base forms.
-### 4) Tokenization and Padding: Converting the preprocessed text into numerical format and padding the sequences to a fixed length to meet the requirements of the deep learning models.
+### 1) Sentiment Analysis: 
+Analyzing the sentiment polarity of the news titles using the TextBlob library, which provides a sentiment score ranging from -1 (negative) to 1 (positive).
+### 2) Text Cleaning:
+Removing noise and irrelevant characters from the text, such as punctuation, numbers, and multiple spaces.
+### 3) Stop-words Removal and Lemmatization: 
+Removing common stop-words and applying lemmatization to reduce words to their base forms.
+### 4) Tokenization and Padding:
+Converting the preprocessed text into numerical format and padding the sequences to a fixed length to meet the requirements of the deep learning models.
 
 ### Unimodal Approaches
 
@@ -39,10 +43,10 @@ The key findings from the results are:
 4) The traditional SVM baseline performs the poorest among the models compared.
 5) 
 ## Future Work
-As future work, the researchers suggest exploring the following:
+As future work, we can explore following:
 
 1) Incorporating pre-trained visual feature extractors like VGG.
-2) Experimenting with various deep learning techniques like LSTM, GRU, and different fusion methods (late fusion).
+2) Experiment with deep learning techniques like LSTM, GRU, and different fusion methods (late fusion).
    
 References:
 1)	[https://iopscience.iop.org/article/10.1088/1757-899X/1099/1/012040]
@@ -56,9 +60,4 @@ References:
 9)	Baheti, P. (2020). Introduction to Multimodal Deep Learning. Retrieved from [https://heartbeat.comet.ml/introduction-to-multimodal-deep-learning-630b259f9291]. Accessed November 13, 2021
 10)	Brown, E. (2019). Online fake news is costing us $78 billion globall each year. ZDNet. [https://www.zdnet.com/article/online-fake-news-costing-us-78-billion-globally-each-year/]
 
-Random Forests
-A Gentle Introduction to Early Stopping to Avoid Overtraining Neural Networks
-Deep Learning in Natural Language Processing
-Google Colab Notebook
-Introduction to Multimodal Deep Learning
-Online Fake News Costing Us $78 Billion Globally Each Year
+
