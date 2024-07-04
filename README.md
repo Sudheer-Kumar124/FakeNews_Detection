@@ -47,6 +47,24 @@ As future work, we can explore following:
 
 1) Incorporating pre-trained visual feature extractors like VGG.
 2) Experiment with deep learning techniques like LSTM, GRU, and different fusion methods (late fusion).
+
+## Usage
+To use the project, follow these steps:
+
+Clone the repository:
+[git clone https://github.com/your-username/fake-news-detection.git]
+
+Install the required dependencies:
+[pip install -r requirements.txt]
+
+Preprocess the data:
+python preprocess.py
+
+Train and evaluate the models:
+python train.py
+python evaluate.py
+
+(Optional) Deploy the trained model for real-world use.
    
 References:
 1)	[https://iopscience.iop.org/article/10.1088/1757-899X/1099/1/012040]
