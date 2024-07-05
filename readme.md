@@ -101,37 +101,25 @@ The **Random Forest model** stands out as the best-performing model based on RMS
 ### Steps to Set Up the Project
 
 1. **Clone the repository:**
-   ```sh
+   ```bash
    git clone https://github.com/Sudheer-Kumar124/FakeNews_Detection.git
    cd FakeNews_Detection
    git checkout Krishnashis_Das
    ```
 
-2. **Create a virtual environment using Anaconda:**
-   ```sh
-   conda create -n fake_news_env python=3.12
-   conda activate fake_news_env
+2. **Create and activate the virtual environment:**
+   ```bash
+   conda create --name fake_news_detection python=3.12
+   conda activate fake_news_detection
    ```
 
 3. **Install the required packages:**
-   ```sh
+   ```bash
    pip install -r requirements.txt
    ```
 
-4. **Run the training script:**
-   ```sh
-   python train.py
-   ```
-
-5. **Evaluate the models:**
-   ```sh
-   python evaluate.py
-   ```
-
-### Usage
-- Ensure you have the necessary datasets in the appropriate directory before running the training and evaluation scripts.
-- Modify the configurations in `config.json` to change model parameters, dataset paths, etc.
+## Conclusion
+This project demonstrates the application of various machine learning and deep learning models to detect fake news, contributing to financial market stability. The comparison of models highlights the strengths of each approach, with the Random Forest model performing the best overall.However, the **LSTM model** also performs exceptionally well, especially in terms of accuracy.
 
 ## Acknowledgements
 This project was developed with the help of various open-source libraries and tools. Special thanks to the developers and the community for their contributions.
-
