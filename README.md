@@ -1,4 +1,4 @@
-# Fake News Detection Using Deep Learning
+# Fake News Detection on Social Media Content Using Deep Learning
 
 ## Introduction
 The rapid spread of information through social media platforms has made it increasingly difficult to discern credible news from misinformation. The proliferation of fake news has led to widespread public confusion, undermined trust in legitimate sources, and posed significant risks to public health and safety. To address this, artificial intelligence, particularly deep learning, offers a promising solution. This project aims to develop a deep learning model to detect and filter out false information from digital platforms by analyzing textual content. This will help identify misleading information and protect the public from the adverse effects of misinformation.
