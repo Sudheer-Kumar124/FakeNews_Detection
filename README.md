@@ -175,6 +175,14 @@ The server will run and you can make POST requests to the \`/predict\` endpoint 
 - **Image Paths**: Ensure all image files are correctly referenced. If the images are in a different folder, adjust the paths in \`app.py\` accordingly.
 - **Dependencies**: If you face issues with missing packages, check \`requirements.txt\` and install any missing dependencies manually.
 
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].
+
+[^1]: My reference.
+[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
+  This is a second line.
+
 
 
 5. **(Optional) Deploy the trained model for real-world use:**
