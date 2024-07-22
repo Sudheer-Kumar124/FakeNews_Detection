@@ -56,25 +56,115 @@ As future work, we can explore the following:
 
 ## Usage
 
-To use the project, follow these steps:
+echo "# Fake News Detection Project
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/fake-news-detection.git
-    ```
-2. **Install the required dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. **Preprocess the data:**
-    ```bash
-    python preprocess.py
-    ```
-4. **Train and evaluate the models:**
-    ```bash
-    python train.py
-    python evaluate.py
-    ```
+Welcome to the Fake News Detection project! This guide will walk you through the steps to set up and run the project on your local machine.
+
+## Table of Contents
+
+1. [Project Setup](#project-setup)
+2. [Adjusting File Paths](#adjusting-file-paths)
+3. [Running the Application](#running-the-application)
+4. [Additional Information](#additional-information)
+5. [License](#license)
+6. [Contact](#contact)
+
+## Project Setup
+
+### 1. Clone the Repository
+
+First, clone the repository from GitHub to your local machine:
+
+\`\`\`bash
+git clone https://github.com/Sudheer-Kumar124/FakeNews_Detection.git
+cd FakeNews_Detection
+\`\`\`
+
+### 2. Create and Activate a Virtual Environment
+
+Create a virtual environment in the project directory:
+
+\`\`\`bash
+python -m venv venv
+\`\`\`
+
+Activate the virtual environment:
+
+- **For Windows:**
+
+    \`\`\`bash
+    venv\\Scripts\\activate
+    \`\`\`
+
+- **For macOS/Linux:**
+
+    \`\`\`bash
+    source venv/bin/activate
+    \`\`\`
+
+### 3. Install Dependencies
+
+Navigate to the \`Scripts\` folder where \`requirements.txt\` is located and install the required packages:
+
+\`\`\`bash
+cd Scripts
+pip install -r requirements.txt
+\`\`\`
+
+### 4. Verify Installation
+
+Ensure that all required packages are installed correctly. If there are any issues, you may need to manually install missing dependencies.
+
+## Adjusting File Paths
+
+Before running the application, you need to configure the paths to the model and image files. Follow these steps:
+
+### 1. Adjust the Model Path
+
+Open the \`app.py\` file and locate the section where the model is loaded. Update the path to point to your model file:
+
+\`\`\`python
+# Example of updating model path in app.py
+model_path = 'path/to/your/model/file'
+\`\`\`
+
+Replace \`'path/to/your/model/file'\` with the relative path to the model file in your project.
+
+### 2. Adjust the Image Paths
+
+Similarly, adjust the paths for any images used in your application. Open \`app.py\` and find the sections where image paths are specified:
+
+\`\`\`python
+# Example of updating image paths in app.py
+image_path = 'path/to/your/image/file'
+\`\`\`
+
+Replace \`'path/to/your/image/file'\` with the relative path to the image files you are using.
+
+## Running the Application
+
+With all paths correctly set up, you can now run the application. Ensure you are in the \`Scripts\` folder and your virtual environment is activated:
+
+\`\`\`bash
+python app.py
+\`\`\`
+
+This will start the application, and you should be able to access it through the provided local URL (usually \`http://localhost:8501\`).
+
+## Additional Information
+
+- **Model Path**: Ensure that the path specified in \`app.py\` matches the location of your model file. If your project structure changes, update this path accordingly.
+- **Image Paths**: Ensure all image files are correctly referenced. If the images are in a different folder, adjust the paths in \`app.py\` accordingly.
+- **Dependencies**: If you face issues with missing packages, check \`requirements.txt\` and install any missing dependencies manually.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or issues, please reach out to [Your Name](mailto:your-email@example.com)." > README.md
+
 5. **(Optional) Deploy the trained model for real-world use:**
     ```markdown
     # Example deployment script (deploy.py)
