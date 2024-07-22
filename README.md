@@ -64,41 +64,41 @@ Welcome to the Fake News Detection project! This guide will walk you through the
 
 First, clone the repository from GitHub to your local machine:
 
-\`\`\`bash
+```
 git clone https://github.com/Sudheer-Kumar124/FakeNews_Detection.git
 cd FakeNews_Detection
-\`\`\`
+```
 
 ### 2. Create and Activate a Virtual Environment
 
 Create a virtual environment in the project directory:
 
-\`\`\`bash
+```
 python -m venv venv
-\`\`\`
+```
 
 Activate the virtual environment:
 
 - **For Windows:**
 
-    \`\`\`bash
+    ```
     venv\\Scripts\\activate
-    \`\`\`
+    ```
 
 - **For macOS/Linux:**
 
-    \`\`\`bash
+    ```
     source venv/bin/activate
-    \`\`\`
+    ```
 
 ### 3. Install Dependencies
 
 Navigate to the \`Scripts\` folder where \`requirements.txt\` is located and install the required packages:
 
-\`\`\`bash
+```
 cd Scripts
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 4. Verify Installation
 
@@ -112,10 +112,10 @@ Before running the application, you need to configure the paths to the model and
 
 Open the \`app.py\` file and locate the section where the model is loaded. Update the path to point to your model file:
 
-\`\`\`python
+```
 # Example of updating model path in app.py
 model_path = 'path/to/your/model/file'
-\`\`\`
+```
 
 Replace \`'path/to/your/model/file'\` with the relative path to the model file in your project.
 
@@ -123,10 +123,10 @@ Replace \`'path/to/your/model/file'\` with the relative path to the model file i
 
 Similarly, adjust the paths for any images used in your application. Open \`app.py\` and find the sections where image paths are specified:
 
-\`\`\`python
+```
 # Example of updating image paths in app.py
 image_path = 'path/to/your/image/file'
-\`\`\`
+```
 
 Replace \`'path/to/your/image/file'\` with the relative path to the image files you are using.
 
@@ -134,9 +134,9 @@ Replace \`'path/to/your/image/file'\` with the relative path to the image files 
 
 With all paths correctly set up, you can now run the application. Ensure you are in the \`Scripts\` folder and your virtual environment is activated:
 
-\`\`\`bash
+```
 python app.py
-\`\`\`
+```
 
 This will start the application, and you should be able to access it through the provided local URL (usually \`http://localhost:8501\`).
 
@@ -148,16 +148,16 @@ If you want to deploy the trained model for real-world use, you can use a Flask 
 
 Create a file named \`deploy.py\` with the following content:
 
-'''
+```
 import pickle
 from flask import Flask, request, jsonify
-'''
+```
 
 # Load the trained model
-'''
+```
 with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
-'''
+```
 
 
 
@@ -165,9 +165,9 @@ with open('model.pkl', 'rb') as file:
 
 Execute the deployment script to start the Flask server:
 
-'''
+```
 python deploy.py
-'''
+```
 
 The server will run and you can make POST requests to the \`/predict\` endpoint to get predictions.
 
