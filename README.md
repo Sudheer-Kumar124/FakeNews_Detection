@@ -6,20 +6,6 @@ Fake news has become a significant global problem, negatively impacting various 
 ## Dataset
 The project uses the **Fakeddit** dataset, a large-scale and multi-modal dataset (text and image) collected from the social media platform Reddit. The dataset consists of more than one million posts from various domains, with several features associated with each post, such as images, comments, users, domains, and other metadata. The dataset contains a variety of fake news types, including misleading content, manipulated content, false connection, imposter content, and satire.
 
-### Data Preprocessing
-The data preprocessing steps include:
-
-1. **Sentiment Analysis:** 
-   Analyzing the sentiment polarity of the news titles using the TextBlob library, which provides a sentiment score ranging from -1 (negative) to 1 (positive).
-
-2. **Text Cleaning:**
-   Removing noise and irrelevant characters from the text, such as punctuation, numbers, and multiple spaces.
-
-3. **Stop-words Removal and Lemmatization:** 
-   Removing common stop-words and applying lemmatization to reduce words to their base forms.
-
-4. **Tokenization and Padding:**
-   Converting the preprocessed text into numerical format and padding the sequences to a fixed length to meet the requirements of the deep learning models.
 
 ## Unimodal Approaches
 Three unimodal deep learning models are explored:
