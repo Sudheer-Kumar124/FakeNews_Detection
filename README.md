@@ -65,9 +65,10 @@ Welcome to the Fake News Detection project! This guide will walk you through the
 1. [Project Setup](#project-setup)
 2. [Adjusting File Paths](#adjusting-file-paths)
 3. [Running the Application](#running-the-application)
-4. [Additional Information](#additional-information)
-5. [License](#license)
-6. [Contact](#contact)
+4. [Optional: Deploying the Model](#optional-deploying-the-model)
+5. [Additional Information](#additional-information)
+6. [License](#license)
+7. [Contact](#contact)
 
 ## Project Setup
 
@@ -151,6 +152,45 @@ python app.py
 
 This will start the application, and you should be able to access it through the provided local URL (usually \`http://localhost:8501\`).
 
+## Optional: Deploying the Model
+
+If you want to deploy the trained model for real-world use, you can use a Flask application. Follow these steps:
+
+### 1. Create the Deployment Script
+
+Create a file named \`deploy.py\` with the following content:
+
+\`\`\`python
+import pickle
+from flask import Flask, request, jsonify
+
+# Load the trained model
+with open('model.pkl', 'rb') as file:
+    model = pickle.load(file)
+
+# Initialize the Flask app
+app = Flask(__name__)
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    data = request.get_json(force=True)
+    prediction = model.predict([data['text']])
+    return jsonify({'prediction': prediction[0]})
+
+if __name__ == '__main__':
+    app.run(debug=True)
+\`\`\`
+
+### 2. Run the Deployment Script
+
+Execute the deployment script to start the Flask server:
+
+\`\`\`bash
+python deploy.py
+\`\`\`
+
+The server will run and you can make POST requests to the \`/predict\` endpoint to get predictions.
+
 ## Additional Information
 
 - **Model Path**: Ensure that the path specified in \`app.py\` matches the location of your model file. If your project structure changes, update this path accordingly.
@@ -163,7 +203,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any questions or issues, please reach out to [Your Name](mailto:your-email@example.com)." > README.md
+For any questions or issues, please reach out to [Your Name](mailto:your-email@example.com).
+" > README.md
+
 
 5. **(Optional) Deploy the trained model for real-world use:**
     ```markdown
