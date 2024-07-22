@@ -160,13 +160,16 @@ If you want to deploy the trained model for real-world use, you can use a Flask 
 
 Create a file named \`deploy.py\` with the following content:
 
-\`\`\`python
+'''
 import pickle
 from flask import Flask, request, jsonify
+'''
 
 # Load the trained model
+'''
 with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
+'''
 
 
 
@@ -174,7 +177,7 @@ with open('model.pkl', 'rb') as file:
 
 Execute the deployment script to start the Flask server:
 
-'''markdown
+'''
 python deploy.py
 '''
 
