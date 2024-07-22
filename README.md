@@ -168,26 +168,15 @@ from flask import Flask, request, jsonify
 with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
-# Initialize the Flask app
-app = Flask(__name__)
 
-@app.route('/predict', methods=['POST'])
-def predict():
-    data = request.get_json(force=True)
-    prediction = model.predict([data['text']])
-    return jsonify({'prediction': prediction[0]})
-
-if __name__ == '__main__':
-    app.run(debug=True)
-\`\`\`
 
 ### 2. Run the Deployment Script
 
 Execute the deployment script to start the Flask server:
 
-\`\`\`bash
+'''markdown
 python deploy.py
-\`\`\`
+'''
 
 The server will run and you can make POST requests to the \`/predict\` endpoint to get predictions.
 
@@ -197,14 +186,6 @@ The server will run and you can make POST requests to the \`/predict\` endpoint 
 - **Image Paths**: Ensure all image files are correctly referenced. If the images are in a different folder, adjust the paths in \`app.py\` accordingly.
 - **Dependencies**: If you face issues with missing packages, check \`requirements.txt\` and install any missing dependencies manually.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or issues, please reach out to [Your Name](mailto:your-email@example.com).
-" > README.md
 
 
 5. **(Optional) Deploy the trained model for real-world use:**
