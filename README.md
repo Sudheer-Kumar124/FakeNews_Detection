@@ -229,3 +229,20 @@ The server will run and you can make POST requests to the \`/predict\` endpoint 
 8. [https://colab.research.google.com/drive/1edXYIghmzu3Bs4UhWJ8Ho9sk13oaebfz?usp=sharing](https://colab.research.google.com/drive/1edXYIghmzu3Bs4UhWJ8Ho9sk13oaebfz?usp=sharing)
 9. Baheti, P. (2020). Introduction to Multimodal Deep Learning. Retrieved from [https://heartbeat.comet.ml/introduction-to-multimodal-deep-learning-630b259f9291](https://heartbeat.comet.ml/introduction-to-multimodal-deep-learning-630b259f9291). Accessed November 13, 2021.
 10. Brown, E. (2019). Online fake news is costing us $78 billion globally each year. ZDNet. [https://www.zdnet.com/article/online-fake-news-costing-us-78-billion-globally-each-year/](https://www.zdnet.com/article/online-fake-news-costing-us-78-billion-globally-each-year/)
+
+
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
