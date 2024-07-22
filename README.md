@@ -56,7 +56,7 @@ As future work, we can explore the following:
 
 ## Usage
 
-echo "# Fake News Detection Project
+# Fake News Detection Project
 
 Welcome to the Fake News Detection project! This guide will walk you through the steps to set up and run the project on your local machine.
 
