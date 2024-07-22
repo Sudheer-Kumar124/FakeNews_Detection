@@ -2,7 +2,7 @@
 
 # Fake News Detection using Deep Learning
 
-## Introduction
+## Introduction:
 Fake news has become a significant global problem, negatively impacting various aspects of society, including politics, economics, and social well-being. This project aims to develop a model for detecting fake news on social media by leveraging sentiment analysis of news content and emotion analysis of users' comments.
 
 ## Dataset
