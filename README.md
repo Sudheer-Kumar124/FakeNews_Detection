@@ -140,36 +140,7 @@ python app.py
 
 This will start the application, and you should be able to access it through the provided local URL (usually \`http://localhost:8501\`).
 
-## Optional: Deploying the Model
 
-If you want to deploy the trained model for real-world use, you can use a Flask application. Follow these steps:
-
-### 1. Create the Deployment Script
-
-Create a file named \`deploy.py\` with the following content:
-
-```
-import pickle
-from flask import Flask, request, jsonify
-```
-
-# Load the trained model
-```
-with open('model.pkl', 'rb') as file:
-    model = pickle.load(file)
-```
-
-
-
-### 2. Run the Deployment Script
-
-Execute the deployment script to start the Flask server:
-
-```
-python deploy.py
-```
-
-The server will run and you can make POST requests to the \`/predict\` endpoint to get predictions.
 
 ## Additional Information
 
@@ -184,31 +155,7 @@ A footnote can also have multiple lines[^2].
 
 
 
-5. **(Optional) Deploy the trained model for real-world use:**
-    ```markdown
-    # Example deployment script (deploy.py)
-    import pickle
-    from flask import Flask, request, jsonify
 
-    # Load the trained model
-    with open('model.pkl', 'rb') as file:
-        model = pickle.load(file)
-
-    # Initialize the Flask app
-    app = Flask(__name__)
-
-    @app.route('/predict', methods=['POST'])
-    def predict():
-        data = request.get_json(force=True)
-        prediction = model.predict([data['text']])
-        return jsonify({'prediction': prediction[0]})
-
-    if __name__ == '__main__':
-        app.run(debug=True)
-
-    # Run the deployment script
-    python deploy.py
-    ```
     
 
 ## References
