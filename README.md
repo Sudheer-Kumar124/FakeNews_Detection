@@ -226,16 +226,12 @@ A footnote can also have multiple lines[^2].
 
 
 > [!NOTE]
-> Useful information that users should know, even when skimming content.
+> Add the files that i have uploaded in the venv/scripts folder into the scripts folder itself (all the files)
 
 > [!TIP]
-> Helpful advice for doing things better or more easily.
+> First create a virtual environment activate it and then run the requirements.txt file to install all the dependencies.
 
 > [!IMPORTANT]
-> Key information users need to know to achieve their goal.
+> Make sure to select the "Copy as path" option while adding the path of the model in app.py instead of "Relative Path".
 
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
 
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
